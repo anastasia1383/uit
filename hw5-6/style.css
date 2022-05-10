@@ -1,0 +1,46 @@
+.wrapper{
+    width:  1200px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.font-size {
+    font-size: 20px;
+}
+
+div div {
+    outline: 1px solid red;
+}
+
+.small {
+    width: 400px;
+}
+
+.middle {
+    width: 600px;
+}
+
+.big {
+    width: 800px;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.inline {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.font-size-reset {
+    font-size: 0;
+}
+
+.float {
+    float: left;
+}
+
+.clr {
+    clear: both;
+}

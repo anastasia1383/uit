@@ -1,0 +1,11 @@
+img {
+    width: 255px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery-page h3, .gallery-page h4 {
+    margin-bottom: 10px;
+}
