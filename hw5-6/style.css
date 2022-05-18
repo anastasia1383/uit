@@ -45,8 +45,24 @@ div div {
     clear: both;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     clear: both;
     display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.in_flex_middle {
+    flex: 0 1 600px;
+}
+
+.in_flex_big {
+    flex: 0 1 800px;
+}
+
+.in_flex_small {
+    flex: 0 1 400px;
 }
