@@ -44,3 +44,9 @@ div div {
 .clr {
     clear: both;
 }
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: block;
+}
