@@ -3,21 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>flex</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>float</title>
+    <link rel="stylesheet" href="../css/main.css">
     
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="flex">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, suscipit?</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolore.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, impedit!</div>
+    <div class="navigation main">
+        <ul>
+            <li><a class="home_img" href="../index.html">Главная</a></li>
+            <li><a class="gallery_img" href="../gallery/gallery.html">Галерея</a></li>
+            <li>
+                <span class="pages">Блоки</span>
+                <ul class="sub_nav">
+                    <li><a href="flex.html">Flex</a></li>
+                    <li class="hov">
+                        <span>Floats</span>
+                        <ul class="sub_nav">
+                            <li><a href="#">Div clearfix</a></li>
+                            <li><a href="pseudo.html">Pseudo element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="table.html">T-cell</a></li>
+                    <li class="hov">
+                        <span>Grids</span>
+                        <ul class="sub_nav">
+                            <li><a href="grid.html">Template columns</a></li>
+                            <li><a href="areas.html">Template areas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inline.html">Inline-block</a></li>
+                </ul>
+            </li>
+        </ul>    
         </div>
-        <div class="flex">
-            <div class="in_flex_middle">
+    <div class="wrapper">
+        <div>
+            <div class="small float">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, suscipit?</div>
+            <div class="small float">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolore.</div>
+            <div class="small float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, impedit!</div>
+            <div class="clr"></div>
+        </div>
+        <div>
+            <div class="middle float">
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio ducimus numquam cumque
                     magni modi minus, ipsa, vitae unde non quibusdam magnam iste ipsam doloribus fuga obcaecati! Nam,
                     corporis quis.</div>
@@ -25,7 +53,7 @@
                     repudiandae, nulla culpa sed mollitia fugit facilis aliquid explicabo rem delectus est dolores?
                     Provident animi aperiam dolores?</div>
             </div>
-            <div class="in_flex_middle"> 
+            <div class="middle float">
                 <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere similique cumque fuga quas rem
                     necessitatibus placeat consectetur iure esse veritatis!</div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt praesentium sequi
@@ -33,43 +61,48 @@
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rem est odit beatae quam soluta illo,
                     fugiat eveniet molestias assumenda.</div>
             </div>
+            <div class="clr"></div>
         </div>
-        <div class="flex">
-            <div class="in_flex_big">
+        <div>
+            <div class="big float">
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fuga possimus, cumque atque natus
                     sit nam corrupti corporis optio officia.</div>
-                <div class="flex">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur repellat unde
+                <div>
+                    <div class="small float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur repellat unde
                         labore impedit voluptas itaque sed quo facere voluptate.</div>
-                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et reprehenderit esse impedit animi,
+                    <div class="small float">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et reprehenderit esse impedit animi,
                         at doloremque eaque mollitia quasi repellendus illo!</div>
+                    <div class="clr"></div>
                 </div>
             </div>
-            <div class="in_flex_small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos qui ad fugit optio
+            <div class="small float">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos qui ad fugit optio
                 tempore, impedit rerum libero delectus eligendi dicta!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos qui ad fugit optio
                 tempore, impedit rerum libero delectus eligendi dicta!</div>
+            <div class="clr"></div>
         </div>
-        <div class="flex">
-            <div class="in_flex_small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab cumque fugiat et consequatur
+        <div>
+            <div class="small float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab cumque fugiat et consequatur
                 ipsam nam illo repudiandae dicta laudantium!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos qui ad fugit optio
                 tempore, impedit rerum libero delectus eligendi dicta!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos qui ad fugit optio
                 tempore, impedit rerum libero delectus eligendi dicta!</div>
-            <div class="in_flex_big">
+            <div class="big float">
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum ipsa praesentium
                     mollitia atque, velit illo laudantium ut reprehenderit cum.</div>
-                <div class="flex">
-                    <div class="in_flex_small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo doloribus aspernatur maxime
+                <div>
+                    <div class="small float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo doloribus aspernatur maxime
                         possimus! Laboriosam minus asperiores voluptatibus, incidunt distinctio debitis est temporibus
                         facere similique ad id eosvoluptatibus, incidunt distinctio debitis est temporibus
                         facere similique ad id eos commodi vel? commodi vel?</div>
-                    <div class="in_flex_small">
+                    <div class="small float">
                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, dolore. Veritatis sequi at
                             perspiciatis laudantium! Iure alias dolore natus consequuntur?</div>
                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius minima tenetur,
                             provident cupiditate facere reiciendis earum inventore? Cumque, dolor!</div>
                     </div>
+                    <div class="clr"></div>
                 </div>
             </div>
+            <div class="clr"></div>
         </div>
     </div>
 </body>

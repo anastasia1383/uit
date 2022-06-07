@@ -1,0 +1,394 @@
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navigation ul {
+    text-align: center;
+    font-size: 30px;
+}
+
+.navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+.navigation a {
+    background: none;
+    border: none;
+    border-left: 3px solid orange;
+    color: orange;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 50px;
+    display: inline-block;
+    width: auto;
+    position: relative;
+}
+
+.home_img:before {
+    position: absolute;
+    content: "";
+    background: url('../images/sprite.png') -0 -80px;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 10px;
+}
+
+.gallery_img:before {
+    position: absolute;
+    content: "";
+    background: url('../images/sprite.png') -80px -0;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 10px;
+}
+
+.navigation span {
+    background: none;
+    border: none;
+    border-left: 3px solid orange;
+    color: orange;
+    text-transform: uppercase;
+    padding: 10px 50px 10px 30px;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    position: relative;
+}
+
+.pages:before {
+    position: absolute;
+    content: "";
+    background: url('../images/sprite.png') -80px -30px;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 10px;
+}
+
+.pages:hover:before {
+    background: url('../images/sprite.png') -80px -30px;
+    transform: rotate(180deg);
+}
+
+.navigation li:first-child a, .navigation li:first-child span {
+    border: none;
+}
+
+.navigation .sub_nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 35px;
+    opacity: 0;
+    transition: opacity .5s ease;
+    display: block;
+    pointer-events: none;
+}
+
+.navigation li:hover>.sub_nav {
+    opacity: 1;
+    display: block;
+    pointer-events: all;
+}
+
+.sub_nav span:before {
+    position: absolute;
+    content: "";
+    background: url('../images/sprite.png') -80px -30px;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 1px;
+}
+
+.sub_nav span:hover:before {
+    content: "";
+    background: url('../images/sprite.png') -80px -30px;
+    transform: rotate(-90deg);
+}
+
+.sub_nav a, .sub_nav span {
+    border: none;
+    border-top: 3px solid orange;
+    background-color: rgba(2, 52, 52, .92);
+    display: block;
+    font-size: 20px;
+    padding: 10px 50px;
+}
+
+.sub_nav li {
+    display: block;
+}
+
+.navigation .sub_nav .sub_nav {
+    top: 0;
+    right: 0;
+    left: auto;
+    padding-top: 3px;
+    white-space: nowrap;
+    transition: right .3s ease, opacity .5s ease-in;
+    position: absolute;
+    opacity: 0;
+}
+
+li.hov:hover>.sub_nav {
+    z-index: -10;
+    opacity: 1;
+    right: 100%;
+}
+
+li:hover>a, li:hover>span {
+    color: beige;
+}
+
+.main {
+    background-color: rgb(2, 52, 52);
+    color: beige;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    border: 15px double orange;
+    width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.main-heading {
+    background-color: orange;
+    font-size: 30px;
+    color: rgb(2, 52, 52);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.sub-heading {
+    font-style: italic;
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    text-decoration: underline wavy orange;
+    text-align: center;
+    font-size: 25px;
+}
+
+p span {
+    font-style: italic;
+    color: orange;
+}
+
+h2 + p {
+    border: 3px dotted black;
+    padding: 5px 20px;
+}
+
+h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    margin-bottom: 15px;
+}
+
+a {
+    color: darkblue;
+    border: 3px solid orange;
+    background-color: orange;
+    text-decoration: none;
+}
+
+.social {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.social ul {
+    width: 144px;
+    font-size: 0;
+    transform: rotate(45deg);
+    z-index: 30;
+    opacity: 0;
+}
+.social_1:hover .social ul {
+    opacity: 1;
+    transition: opacity .5s ease 1s;
+}
+
+.social li {
+    display: inline-block;
+}
+
+
+.social a {
+    border: none;
+    position: relative;
+    background-color: transparent;
+    display: block;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 2px;
+}
+
+.social a:before {
+    content: "";
+    position: relative;
+    transform: rotate(-45deg);
+    width: 40px; 
+    height: 40px;
+    display: block;
+}
+
+.insta:before {
+    background: url('../images/sprite.png') -40px -0;
+}
+
+.vivino:before {
+    background: url('../images/sprite.png') -40px -40px;
+}
+
+.github:before {
+    background: url('../images/sprite.png') 0 0;
+}
+
+.teleg::before {
+    background: url('../images/sprite.png') -0 -40px;
+}
+
+.social_1 {
+    position: fixed;
+    right: -240px;
+    top: calc(50% - 150px);
+    transition: right 1s linear;
+    width: 310px;
+    height: 300px;
+    display: flex;
+    z-index: 20;
+}
+
+.side_block {
+    font-size: 50px;
+    color: black;
+    background: orange;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 70px;
+    border: 3px solid red;
+    animation-duration: .1s;
+    animation-name: skew;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skew {
+    from {
+      transform: skewX(2deg);
+    }
+
+    50% {
+        transform: skewX(-2deg);
+    }
+  
+    to {
+      transform: skewX(2deg);
+    }
+}
+
+.side_block>span {
+    transform: rotate(-90deg) translateY(-50%);
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    margin-left: -100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.social_1:hover {
+    right: 0;
+}
+
+.social_1:hover .side_block {
+    animation: none;
+}
+
+.animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    perspective: 100px;
+}
+
+.animation div {
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    transform: rotateY(90deg);
+    transform-origin: 0 100%;
+    background: orange;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    backface-visibility: hidden;
+}
+
+.block_1 {
+    left: 0;
+    transition: transform .25s linear .75s;
+}
+
+.block_2 {
+    left: 60px;
+    transition: transform .25s linear .5s;
+}
+
+.block_3 {
+    left: 120px;
+    transition: transform .25s linear .25s;
+}
+
+.block_4 {
+    left: 180px;
+    transition: transform .25s linear;
+}
+
+.social_1:hover .block_1 {
+    left: 0;
+    transition: transform .25s linear ;
+}
+
+.social_1:hover .block_2 {
+    left: 60px;
+    transition: transform .25s linear .25s;
+}
+
+.social_1:hover .block_3 {
+    left: 120px;
+    transition: transform .25s linear .5s;
+}
+
+.social_1:hover .block_4 {
+    left: 180px;
+    transition: transform .25s linear .75s;
+}
+
+.social_1:hover .animation div {
+    transform: rotateY(0);
+}

@@ -24,15 +24,18 @@ img {
     font-size: 30px;
 }
 
-.parent:hover .text {
+.parent .text {
     position: absolute;
-    display: block;
+    display: none;
     background: rgba(0, 0, 0, .5);
     top: 50%;
     margin-top: -22px;
     width: 100%;
     left: 0;
+}
 
+.parent:hover .text {
+    display: block;
 }
 
 .menu {
@@ -50,7 +53,11 @@ img {
     display: block;
     padding: 10px 15px;
     font-size: 30px;
-    border: 1px solid rgb(2, 52, 52);
-    color: rgb(2, 52, 52);
-    background: orange;
+    border: 1px solid orange;
+    color: orange;
+    background: rgb(2, 52, 52);
+}
+
+.menu_parts a:hover {
+    color: beige;
 }

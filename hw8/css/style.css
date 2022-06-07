@@ -8,8 +8,8 @@
     font-size: 20px;
 }
 
-div div {
-    outline: 1px solid red;
+.wrapper div {
+    outline: 1px solid rgb(2, 52, 52);
 }
 
 .small {
